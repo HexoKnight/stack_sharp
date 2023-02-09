@@ -37,7 +37,7 @@
 ]
 //;
 
-[;while { ] [;do ) ] [;end }) ]
+[;while { ] [;do ( ] [;end }) ]
 [;repeat|rep|repeat{(|rep{( { 1 - dup ltz ( drop )!( ] // repeats a set of instructions but requires them to leave the top of the stack alone
 [;list_for|list_for{( /* list_var {-} list_element */ // loops over the elements of a list, placing them on top of the stack but requires the top of the stack to be left alone
     1 +
