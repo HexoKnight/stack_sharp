@@ -109,4 +109,4 @@ By default, the interpreter will try to import the files with the stack_sharp `.
 The standard library functions can be found in `ss_src/stdlib/stdlib.ss`.
 Documentation for these functions may follow but their names/aliases, function notations and other comments make most of them self explanatory. Feel free to add documentation if you wish.
 
-*this section is now probably~~still in~~complete*
+*this section is now probably ~~still in~~complete*
