@@ -95,11 +95,14 @@ A string starts and ends with either `'`s or `"`s, but not a mixture of both, an
 ## Interpreter commands
 All interpreter commands consist of `///` immediately followed by the command then whitespace separated arguments, which are:
 - `import`/`dep:` - imports the file names that follow from the ss_src folder, eg. `///import fib.ss foo/bar bar/foo.txt` imports ss_src/fib.ss, ss_src/foo/bar.ss and ss_src/bar/foo.txt.ss
-    - see [link](#importing) for more details
+    - see [importing](#importing) for more details
 - `clr`/`clear` - clears the console window
 - `heap`/`show_heap`/`hide_heap` - toggles display of the heap
 - `pause`/`unpause`/`p` - toggles execution of program
 
 ## Importing
+The [import](#interpreter-commands) command can be used to import files. When importing a file, the interpreter will first import any dependencies recursively, then it will simply compile the imported files as if they were typed out in the interpreter, ignoring only the first line related to dependencies.<br>
+Dependencies for a file can be defined on the first line of the file using `///dep: ` followed by whitespace separated file names, identically to the import command.<br>
+By default, the interpreter will try to import the files with the stack_sharp `.ss` file extension, however, any file extension is fine as long as it is specified.
 
-*this section is still incomplete*
+*this section is now probably~~still in~~complete*
