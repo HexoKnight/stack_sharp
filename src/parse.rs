@@ -259,7 +259,7 @@ pub fn parse_program_code(chars: impl IntoIterator<Item = char>, interpreter: Pa
                                     EndIf | ElseIf(Some(_)) => depth += 1,
                                     If(_) => depth -= 1,
                                     ElseIf(None) => {
-                                        program_codes[back_pc] = ElseIf(std::num::NonZeroUsize::new(program_codes.len())); // FINISH!!!!!!
+                                        program_codes[back_pc] = ElseIf(std::num::NonZeroUsize::new(program_codes.len()));
                                     }
                                     _ => {}
                                 }
