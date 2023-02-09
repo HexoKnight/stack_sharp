@@ -1,1 +1,1 @@
-ss_src/* linguist-language=stack_sharp # I do not know Scheme
+*.ss linguist-language=stack_sharp # I do not know Scheme
