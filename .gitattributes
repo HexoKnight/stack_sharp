@@ -1,1 +1,3 @@
-*.ss linguist-language=stack_sharp # I do not know Scheme
+*.ss linguist-documentation #linguist-language=stack_sharp # one day
+# not really documentation, but its certainly not generated or vendored
+# I do not know Scheme
