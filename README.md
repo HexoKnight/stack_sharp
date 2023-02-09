@@ -10,7 +10,8 @@ For example `5 3 +` would push the number `5` on to the stack, then the number `
 
 ### built in operators/functions
 All the following functions use up their parameter(s) and those that calculate a result push it onto the stack:
-Arithmetic:
+
+**Arithmetic:**
 - integer - pushes the integer to the stack, can be negative
 - `+` - adds the top 2 numbers
 - `-` - subtracts the top number from the next number
@@ -23,4 +24,10 @@ Arithmetic:
 - `^` - binary xors the top 2 numbers
 - `!` - binary nots the top number#
 
-- `@` - 
+**Testing:**
+Boolean values in stack_sharp are stored as `0` for false and `-1` for true (as this is equivalent to all ones in binary), however, any non-zero number will be considered true
+- `@` - tests if the top number is equal to 0 and pushes the boolean result
+- `@+` - tests if the top number is greater than 0 and pushes the boolean result
+
+
+*this section is still incomplete*
