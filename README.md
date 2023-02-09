@@ -92,4 +92,14 @@ In addition, single value macros (essentially constants) can be declared by decl
 ### Strings
 A string starts and ends with either `'`s or `"`s, but not a mixture of both, and is compiled to each character pushed to the stack as its ascii equivalent in reverse order, eg. `'hello'` -> `111 108 108 101 104`. These characters can be used within theier respective strings by prefixing them with `/`, eg. `'\''` -> `39`. A string bounded by `"`s will have a `-1` prefixed on the stack to enable the end of the string to be identified. Both types of strings can also be prefixed with `#` to push the length of the string to the stack after it. For example, `"hello"` -> `-1 111 108 108 101 104` and `#'hi'` -> `105 104 2`. These are mainly used to store a string as a linked list and to store one as an array, respectively.
 
+## Interpreter commands
+All interpreter commands consist of `///` immediately followed by the command then whitespace separated arguments, which are:
+- `import`/`dep:` - imports the file names that follow from the ss_src folder, eg. `///import fib.ss foo/bar bar/foo.txt` imports ss_src/fib.ss, ss_src/foo/bar.ss and ss_src/bar/foo.txt.ss
+    - see [link](#importing) for more details
+- `clr`/`clear` - clears the console window
+- `heap`/`show_heap`/`hide_heap` - toggles display of the heap
+- `pause`/`unpause`/`p` - toggles execution of program
+
+## Importing
+
 *this section is still incomplete*
