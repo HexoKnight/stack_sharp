@@ -105,4 +105,8 @@ The [import](#interpreter-commands) command can be used to import files. When im
 Dependencies for a file can be defined on the first line of the file using `///dep: ` followed by whitespace separated file names, identically to the import command.<br>
 By default, the interpreter will try to import the files with the stack_sharp `.ss` file extension, however, any file extension is fine as long as it is specified.
 
+## Stdlib
+The standard library functions can be found in `ss_src/stdlib/stdlib.ss`.
+Documentation for these functions may follow but their names/aliases, function notations and other comments make most of them self explanatory. Feel free to add documentation if you wish.
+
 *this section is now probably~~still in~~complete*
