@@ -34,7 +34,7 @@ fn main() {
     loop {
         while interpreter.input_required() || settings["pause"] {
             let input = io::read_line(">> ");
-            if input.starts_with("//") {
+            if input.starts_with("///") {
                 let mut command_args = input[3..].split_ascii_whitespace();
                 match command_args.next() {
                     Some("import"|"dep:") => {
